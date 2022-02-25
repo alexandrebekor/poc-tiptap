@@ -1,18 +1,10 @@
-import Tiptap from '../components/Tiptap'
+import Tiptap from "../components/Tiptap"
 
 const App = () => {
-  const save = () => {
-    const json = editor.getJSON()
-    res.send(json)
-  }
-
   return (
-    <div>
+    <div className='flex flex-col min-h-screen bg-gray-200 items-center'>
       <h1>Editor</h1>
-      <div className='App'>
-        <Tiptap />
-      </div>
-      <button onClick={ save }>Enviar</button>
+      <Tiptap />
     </div>
   )
 }
